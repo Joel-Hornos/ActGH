@@ -23,10 +23,36 @@ public class ActGitHub {
         numero2 = sc.nextInt();
         resultado = sumar(numero1, numero2);
         System.out.println("Suma: " + resultado);
+        
+        sc = new Scanner(System.in);
+        int num1, num2, resultat;
+        num1=0;
+        num2=0;
+        System.out.print("Introdueix el primer número: ");
+        num1 = sc.nextInt();
+        System.out.print("Introdueix el segon número: ");
+        num2 = sc.nextInt();
+        resultat = multiplicar(num1, num2);
+        System.out.println("Multiplicacio: " + resultat);
+        
+        
+        
+        
     }
+    
     public static int sumar(int a, int b){
            int c;
            c = a + b;
            return c;
     }
+    
+    public static int  multiplicar(int a, int b){
+         int resultat;
+         
+         resultat = a*b;
+         
+         return resultat;
+        
+    }
+    
 }
